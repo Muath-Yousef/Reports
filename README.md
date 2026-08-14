@@ -1,30 +1,38 @@
 # Security Assessment Portfolio
 
-This repository contains selected, authorized cybersecurity assessment work by **Mu'ath Yousef**.
+Selected, authorized cybersecurity assessment work by **Mu'ath Yousef**.
 
-## Available assessment
+## Published work
 
-### DVTA v2.0 — Thick-Client Security Assessment
+### DVTA v2.0 — thick-client security assessment
 
-An authorized grey-box assessment of Damn Vulnerable Thick Application v2.0 performed in an isolated academic lab environment.
+A grey-box assessment of Damn Vulnerable Thick Application v2.0, performed against deliberately vulnerable software in an isolated academic lab.
 
-The assessment documents:
+| Dimension | Evidence |
+|---|---|
+| Findings | 12 confirmed observations |
+| Severity distribution | 5 critical, 4 high, 2 medium, 1 informational |
+| Techniques | Static analysis, dynamic validation, source review, and evidence capture |
+| Output | Reproducible findings with detection and remediation guidance |
+| Boundary | Academic lab only; no third-party testing authorization |
 
-- 12 confirmed findings
-- 5 critical, 4 high, 2 medium, and 1 informational finding
-- static and dynamic analysis
-- reproducible evidence
-- detection guidance and remediation recommendations
-- explicit academic and responsible-use boundaries
+- [Read the assessment overview](dvta/README.md)
+- [Open the HTML presentation](dvta/index.html)
+- [Download the Word report](dvta/dvta-security-assessment.docx)
 
-[Open the DVTA assessment documentation](DVTA./README.md)
+## Evidence standard
 
-## Scope and ethics
+Each published assessment should identify:
 
-All material in this repository relates to deliberately vulnerable software, isolated labs, or systems tested with explicit authorization. Nothing here authorizes testing against third-party systems.
+- the authorization and lab boundary;
+- the target and version;
+- the method and evidence source;
+- confirmed observations versus assumptions;
+- severity rationale, limitations, and remediation;
+- any sensitive information removed before publication.
 
-## Professional context
+## Responsible use
 
-The work demonstrates practical experience in thick-client assessment, source review, credential handling risks, access-control failures, injection flaws, evidence collection, and remediation-oriented reporting.
+This repository documents work on deliberately vulnerable software, isolated labs, or explicitly authorized systems. It does not authorize testing against third-party assets.
 
 For the broader engineering portfolio, see [Muath-Yousef](https://github.com/Muath-Yousef).

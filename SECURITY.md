@@ -1,37 +1,26 @@
-# Security Policy
+# Security and disclosure policy
 
-## Supported status
+## Repository scope
 
-This repository is under active engineering or documentation development. It must not be treated as proof of production readiness or as authorization to test third-party systems.
+This repository publishes assessment artifacts for deliberately vulnerable labs or explicitly authorized work. It is not an active scanning service and does not authorize testing against any third-party system.
 
-## Reporting a vulnerability
+## Publication rules
 
-Do not publish credentials, client data, exploit details, or sensitive evidence in a public issue.
+Before an artifact is made public, remove:
 
-Use GitHub's private vulnerability reporting / Security Advisory feature when available. If it is unavailable, contact the repository owner through the LinkedIn profile linked from [Mu'ath Yousef](https://github.com/Muath-Yousef) and request a private reporting channel.
+- credentials, tokens, private keys, cookies, and session material;
+- client names, contacts, internal hostnames, and production addresses;
+- raw logs, screenshots, or metadata that can identify a real organization;
+- exploit material that creates unnecessary risk beyond the educational purpose.
 
-Include:
+Use synthetic or reserved example data when context is needed.
 
-- affected component and commit
-- impact and preconditions
-- minimal reproduction using synthetic data
-- suggested mitigation, if known
+## Reporting a problem
 
-## Safety requirements
+If an artifact exposes sensitive data or creates a security concern, do not open a public issue containing the details. Use GitHub private vulnerability reporting when available, or contact the repository owner through the LinkedIn profile linked from [Mu'ath Yousef](https://github.com/Muath-Yousef) and request a private channel.
 
-- SOAR_DRY_RUN=true by default
-- human approval for sensitive or destructive actions
-- CDN and RFC1918 addresses are never automatically blocked
-- DNS-derived events are NOTIFY_ONLY, never BLOCK_IP
-- raw client data is never sent to external AI providers
-- credentials, tokens, session data, and real client evidence are never committed
-- failures must fail closed and preserve an audit trail
-- every action requires a rollback path
-
-## Authorized use
-
-Use this work only on systems you own or are explicitly authorized to test. Deliberately vulnerable lab targets must remain isolated.
+Include the affected path and commit, the nature of the exposure, and the minimum information needed to reproduce the issue.
 
 ## No bug bounty promise
 
-This repository does not currently operate a paid bug bounty program. Responsible reports are still appreciated.
+This repository does not currently operate a paid bug bounty program.
